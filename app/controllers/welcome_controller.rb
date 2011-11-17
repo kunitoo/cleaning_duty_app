@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @cleaning_dutys = CleaningDuty.all
+    @cleaning_duties = CleaningDuty.all
   end
 end
