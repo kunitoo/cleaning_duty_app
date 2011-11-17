@@ -12,28 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :dust1 %><br />
-    <%= f.text_field :dust1 %>
+    <%= f.label :dust1, "ごみすて1" %><br />
+    <%= f.collection_select(:dust1, Member.all, :name, :name) %>
   </div>
   <div class="field">
-    <%= f.label :dust2 %><br />
-    <%= f.text_field :dust2 %>
+    <%= f.label :dust2, "ごみすて2" %><br />
+    <%= f.collection_select(:dust2, Member.all, :name, :name) %>
   </div>
   <div class="field">
-    <%= f.label :cleaner1 %><br />
-    <%= f.text_field :cleaner1 %>
+    <%= f.label :cleaner1, "掃除機1" %><br />
+    <%= f.collection_select(:cleaner1, Member.all, :name, :name) %>
   </div>
   <div class="field">
-    <%= f.label :cleaner2 %><br />
-    <%= f.text_field :cleaner2 %>
+    <%= f.label :cleaner2, "掃除機2" %><br />
+    <%= f.collection_select(:cleaner2, Member.all, :name, :name) %>
   </div>
   <div class="field">
-    <%= f.label :table1 %><br />
-    <%= f.text_field :table1 %>
+    <%= f.label :table1, "テーブル1" %><br />
+    <%= f.collection_select(:table1, Member.all, :name, :name) %>
   </div>
   <div class="field">
-    <%= f.label :table2 %><br />
-    <%= f.text_field :table2 %>
+    <%= f.label :table2, "テーブル1" %><br />
+    <%= f.collection_select(:table2, Member.all, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :start_day %><br />

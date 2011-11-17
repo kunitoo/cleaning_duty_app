@@ -25,11 +25,14 @@ class CleaningDutiesController < ApplicationController
   # GET /cleaning_duties/new.json
   def new
     @cleaning_duty = CleaningDuty.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @cleaning_duty }
     end
+  end
+
+  def duty_allocation!(cleaning_duty)
+    cleaning_duty.dust1 = Member.find(1).name
   end
 
   # GET /cleaning_duties/1/edit
