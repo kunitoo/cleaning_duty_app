@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dust1: MyString
+  dust2: MyString
+  cleaner1: MyString
+  cleaner2: MyString
+  table1: MyString
+  table2: MyString
+  start_day: 2011-11-17
+  end_day: 2011-11-17
+
+two:
+  dust1: MyString
+  dust2: MyString
+  cleaner1: MyString
+  cleaner2: MyString
+  table1: MyString
+  table2: MyString
+  start_day: 2011-11-17
+  end_day: 2011-11-17

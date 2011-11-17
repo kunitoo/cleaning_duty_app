@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111117013843) do
+ActiveRecord::Schema.define(:version => 20111117024333) do
+
+  create_table "cleaning_duties", :force => true do |t|
+    t.string   "dust1"
+    t.string   "dust2"
+    t.string   "cleaner1"
+    t.string   "cleaner2"
+    t.string   "table1"
+    t.string   "table2"
+    t.date     "start_day"
+    t.date     "end_day"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "members", :force => true do |t|
     t.string   "name"
