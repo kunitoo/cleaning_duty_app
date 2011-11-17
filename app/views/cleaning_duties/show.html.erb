@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dust1:</b>
+  <%= @cleaning_duty.dust1 %>
+</p>
+
+<p>
+  <b>Dust2:</b>
+  <%= @cleaning_duty.dust2 %>
+</p>
+
+<p>
+  <b>Cleaner1:</b>
+  <%= @cleaning_duty.cleaner1 %>
+</p>
+
+<p>
+  <b>Cleaner2:</b>
+  <%= @cleaning_duty.cleaner2 %>
+</p>
+
+<p>
+  <b>Table1:</b>
+  <%= @cleaning_duty.table1 %>
+</p>
+
+<p>
+  <b>Table2:</b>
+  <%= @cleaning_duty.table2 %>
+</p>
+
+<p>
+  <b>Start day:</b>
+  <%= @cleaning_duty.start_day %>
+</p>
+
+<p>
+  <b>End day:</b>
+  <%= @cleaning_duty.end_day %>
+</p>
+
+
+<%= link_to 'Edit', edit_cleaning_duty_path(@cleaning_duty) %> |
+<%= link_to 'Back', cleaning_duties_path %>

@@ -1,0 +1,49 @@
+<%= form_for(@cleaning_duty) do |f| %>
+  <% if @cleaning_duty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cleaning_duty.errors.count, "error") %> prohibited this cleaning_duty from being saved:</h2>
+
+      <ul>
+      <% @cleaning_duty.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dust1 %><br />
+    <%= f.text_field :dust1 %>
+  </div>
+  <div class="field">
+    <%= f.label :dust2 %><br />
+    <%= f.text_field :dust2 %>
+  </div>
+  <div class="field">
+    <%= f.label :cleaner1 %><br />
+    <%= f.text_field :cleaner1 %>
+  </div>
+  <div class="field">
+    <%= f.label :cleaner2 %><br />
+    <%= f.text_field :cleaner2 %>
+  </div>
+  <div class="field">
+    <%= f.label :table1 %><br />
+    <%= f.text_field :table1 %>
+  </div>
+  <div class="field">
+    <%= f.label :table2 %><br />
+    <%= f.text_field :table2 %>
+  </div>
+  <div class="field">
+    <%= f.label :start_day %><br />
+    <%= f.date_select :start_day %>
+  </div>
+  <div class="field">
+    <%= f.label :end_day %><br />
+    <%= f.date_select :end_day %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
