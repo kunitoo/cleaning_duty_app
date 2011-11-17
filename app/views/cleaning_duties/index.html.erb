@@ -1,0 +1,37 @@
+<h1>Listing cleaning_duties</h1>
+
+<table>
+  <tr>
+    <th>Dust1</th>
+    <th>Dust2</th>
+    <th>Cleaner1</th>
+    <th>Cleaner2</th>
+    <th>Table1</th>
+    <th>Table2</th>
+    <th>Start day</th>
+    <th>End day</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cleaning_duties.each do |cleaning_duty| %>
+  <tr>
+    <td><%= cleaning_duty.dust1 %></td>
+    <td><%= cleaning_duty.dust2 %></td>
+    <td><%= cleaning_duty.cleaner1 %></td>
+    <td><%= cleaning_duty.cleaner2 %></td>
+    <td><%= cleaning_duty.table1 %></td>
+    <td><%= cleaning_duty.table2 %></td>
+    <td><%= cleaning_duty.start_day %></td>
+    <td><%= cleaning_duty.end_day %></td>
+    <td><%= link_to 'Show', cleaning_duty %></td>
+    <td><%= link_to 'Edit', edit_cleaning_duty_path(cleaning_duty) %></td>
+    <td><%= link_to 'Destroy', cleaning_duty, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cleaning duty', new_cleaning_duty_path %>

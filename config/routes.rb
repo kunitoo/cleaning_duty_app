@@ -1,4 +1,6 @@
 CleaningDutyApp::Application.routes.draw do
+  resources :cleaning_duties
+
   get "welcome/index"
 
   resources :members
