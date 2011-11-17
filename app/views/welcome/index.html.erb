@@ -1,2 +1,21 @@
 <h1>掃除当番管理システム</h1>
 
+<table>
+  <tr>
+    <th>週</th>
+    <th colspan="2">ゴミ</th>
+    <th colspan="2">テーブル</th>
+    <th colspan="2">掃除機</th>
+  </tr>
+<%= @cleaning_dutys.each do |duty|  %>
+  <tr>
+    <td>週1</td>
+    <td><%= duty.dust1  %></td>
+    <td><%= duty.dust2  %></td>
+    <td><%= duty.cleaner1  %></td>
+    <td><%= duty.cleaner2  %></td>
+    <td><%= duty.table1  %></td>
+    <td><%= duty.table2  %></td>
+  </tr>
+<% end %>
+</table>
