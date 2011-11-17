@@ -10,30 +10,30 @@
       </ul>
     </div>
   <% end %>
-
+  <% target_members = Member.where(:cleaning_duty_target => true) %>
   <div class="field">
     <%= f.label :dust1, "ごみすて1" %><br />
-    <%= f.collection_select(:dust1, Member.all, :name, :name) %>
+    <%= f.collection_select(:dust1, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :dust2, "ごみすて2" %><br />
-    <%= f.collection_select(:dust2, Member.all, :name, :name) %>
+    <%= f.collection_select(:dust2, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :cleaner1, "掃除機1" %><br />
-    <%= f.collection_select(:cleaner1, Member.all, :name, :name) %>
+    <%= f.collection_select(:cleaner1, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :cleaner2, "掃除機2" %><br />
-    <%= f.collection_select(:cleaner2, Member.all, :name, :name) %>
+    <%= f.collection_select(:cleaner2, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :table1, "テーブル1" %><br />
-    <%= f.collection_select(:table1, Member.all, :name, :name) %>
+    <%= f.collection_select(:table1, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :table2, "テーブル1" %><br />
-    <%= f.collection_select(:table2, Member.all, :name, :name) %>
+    <%= f.collection_select(:table2, target_members, :name, :name) %>
   </div>
   <div class="field">
     <%= f.label :start_day %><br />
