@@ -22,16 +22,16 @@ ActiveRecord::Schema.define(:version => 20111117024333) do
     t.string   "table2"
     t.date     "start_day"
     t.date     "end_day"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "members", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.boolean  "cleaning_duty_target"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
 
 end
